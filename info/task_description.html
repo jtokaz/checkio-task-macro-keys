@@ -1,38 +1,25 @@
 <p>
-    In mathematics a <strong>magic square</strong> is an arrangement of numbers
-    (integers in our case) in a square grid, where the numbers in each row, each column and the numbers in the forward and backward main diagonals, all
-    sum up to the same number.
+    A <strong>keyboard macro</strong> allows a sequence of keystrokes to be transformed into another usually longer sequence of keystrokes.
 </p>
-
-<p style="text-align: center;">
-    <img class="for_info_only"
-         title="example"
-         src="{{MEDIA}}magic-square.png"
-         alt="example"
-         width="325px"/>
-    <img class="for_editor_only"
-         title="example"
-         src="{{MEDIA}}magic-square.png"
-         alt="example"
-         width="325px"/>
+<p>
+    For this task someone has maliciously assigned macros to single letter keystrokes.  If <em>d</em> is 
+    assigned to <em>foo</em> and <em>s</em> is assigned to <em>bar</em> then typing "I like dessert." results
+    in the screen displaying "I like fooebarbarert." You are given your input to the keyboard and the you see
+    on to screen.  Use your coding skills to determine the minimum number of letters that were assigned macros.
+</p>
+<p>
+    Only letters are assigned macros which can be any length (including 0).  The upper and lower cases of a letter
+    are mapped separately.  <em>A</em> could be mapped to <em>b</em></em>, while <em>a</em> is mapped to <em>bar</em>
+    or not at all.
 </p>
 
 <p>
-    You have been given an incomplete magic square (with a size from 3 to 5). With your coding skills, you must finish the square.
-    It must be a <em>normal</em> magic square and contain integers from 1 to n<sup>2</sup> without repeating.
-    The square is presented as a list of lists with integers. Zero is used to mark an empty cell.
-    You should return a completed magic square. The task may have multiple solutions.
-</p>
-<p>
-    You can read more about the about Magic Squares on <a href="http://en.wikipedia.org/wiki/Magic_square">Wikipedia</a>.
+    <strong>Input: </strong> The string you type and the string displayed with macros applied.
 </p>
 
 <p>
-    <strong>Input: </strong> A partially filled magic square as a list of lists with integers.
-</p>
-
-<p>
-    <strong>Output: </strong> The completed magic square as a list of lists with integers.
+    <strong>Output: </strong> The minimal number of macros required to transform the typed string to the displayed
+    string.
 </p>
 
 <div class="for_info_only">
